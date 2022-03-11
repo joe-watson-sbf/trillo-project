@@ -10,14 +10,15 @@
     background-color: $color-grey-light-2;
     box-sizing: $shadow-dark;
     min-height: 50rem;
+    font-size: $default-font;
 }
 
 
 .header {
-    font-size: 2.4rem;
+    font-size: $default-font;
     height: 7rem;
     background-color: $color-grey-light-1;
-    border-bottom: $color-grey-light-2;
+    border-bottom: 1px solid $color-grey-light-2;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,17 +26,48 @@
 
 
 .content {
-    font-size: 2.4rem;
+    font-size: $default-font;
     display: flex;
 }
 
 .sidebar {
     background-color: $color-grey-dark-1;
     flex: 0 0 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
 }
 
 .hotel-view {
+    font-size: $default-font;
     background-color: $color-grey-light-1;
     flex: 1;
+}
+
+
+.detail{
+    display: flex;
+    font-size: $default-font;
+    padding: 4.5rem;
+    background-color: $color-grey-light-1;
+    border-bottom: 1px solid $color-grey-light-2;
+}
+
+.description{
+    font-size: inherit;
+    background-color: $color-white;
+    box-shadow: 0 2rem 5rem rgba(0,0,0,.06);
+    flex: 0 0 60%;
+    margin-right: 4.5rem;
+    padding: 3rem;
+}
+
+.user-reviews{
+    font-size: inherit;
+    background-color: $color-white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

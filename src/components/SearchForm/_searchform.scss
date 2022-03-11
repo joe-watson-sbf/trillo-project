@@ -43,6 +43,10 @@
     &__button {
         border: none;
         background-color: $color-grey-light-2;
+
+        &:hover{
+            cursor: pointer;
+        }
     }
 
     &__icon {
