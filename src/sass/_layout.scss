@@ -11,11 +11,16 @@
     box-sizing: $shadow-dark;
     min-height: 50rem;
     font-size: $default-font;
+
+    @media only screen and (max-width: $bp-largest){
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+    }
 }
 
 
 .header {
-    font-size: $default-font;
     height: 7rem;
     background-color: $color-grey-light-1;
     border-bottom: 1px solid $color-grey-light-2;
@@ -26,8 +31,11 @@
 
 
 .content {
-    font-size: $default-font;
     display: flex;
+
+    @media only screen and (max-width: $bp-medium){
+        flex-direction: column;
+    }
 }
 
 .sidebar {
@@ -37,10 +45,13 @@
     flex-direction: column;
     justify-content: space-between;
 
+    @media only screen and (max-width: $bp-medium){
+        flex-direction: row;
+    }
+
 }
 
 .hotel-view {
-    font-size: $default-font;
     background-color: $color-grey-light-1;
     flex: 1;
 }
@@ -48,7 +59,6 @@
 
 .detail{
     display: flex;
-    font-size: $default-font;
     padding: 4.5rem;
     background-color: $color-grey-light-1;
     border-bottom: 1px solid $color-grey-light-2;

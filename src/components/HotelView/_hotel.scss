@@ -16,7 +16,6 @@
 .overview{
     display: flex;
     align-items: center;
-    font-size: $default-font;
     border-bottom: $line;
 
     &__heading{
@@ -62,7 +61,6 @@
     }
 
     &__rating-average{
-        font-size: 2.25rem;
         font-weight: 300;
         margin-bottom: -3px;
     }
@@ -78,7 +76,6 @@
 .btn-inline{
     border: none;
     color: $color-primary;
-    font-size: 1.7rem;
     border-bottom: 1px solid currentColor;
     padding-bottom: 2px;
     background-color: transparent;
@@ -111,7 +108,6 @@
 }
 
 .list{
-    font-size: $default-font;
     list-style: none;
     margin: 3rem 0;
     padding: 3rem 0;
@@ -151,7 +147,6 @@
 }
 
 .recommend{
-    font-size: $default-font;
     color: $color-grey-dark-3;
     display: flex;
     align-items: center;
@@ -170,14 +165,13 @@
         border: 3px solid $color-white;
 
         &:not(:last-child){
-            margin-right: -1.5rem;
+            margin-right: -2rem;
         }
     }
 }
 
 
 .review{
-    font-size: 2.2rem;
     background-color: $color-white;
     box-shadow: $shadow-dark;
     padding: 3rem;
@@ -192,7 +186,6 @@
     }
 
     &__user{
-        font-size: $default-font;
         display: flex;
         align-items: center;
     }
@@ -209,7 +202,6 @@
     }
 
     &__user-name{
-        font-size: 1.1;
         font-weight: 600;
         text-transform: uppercase;
         margin-bottom: .4rem;
@@ -222,7 +214,6 @@
 
     &__rating{
         color: $color-primary;
-        font-size: 2.2rem;
         font-weight: 300;
     }
 
@@ -232,7 +223,6 @@
         top: -2.75rem;
         left: 1rem;
         line-height: 1;
-        font-size: 20rem;
         color: $color-grey-light-2;
         font-family: sans-serif;
         z-index: 1;
